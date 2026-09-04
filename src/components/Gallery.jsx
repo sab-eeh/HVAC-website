@@ -3,65 +3,72 @@ import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 import { RevealGroup, RevealItem } from "./Reveal";
-import hero from "../assets/hero.jpg";
-import hvac from "../assets/hvac.jpg";
-import refrigeration from "../assets/refrigeration.jpg";
-import appliances from "../assets/appliances.jpg";
-import process from "../assets/process.jpg";
-import detail from "../assets/detail.jpg";
-import thermostat from "../assets/thermostat.jpg";
-import wine from "../assets/wine.jpg";
+import heroTech from "../assets/hero image.png";
+import outdoorService from "../assets/hero image1.jpg";
+import installCrew from "../assets/process.jpg";
+import premiumAppliances from "../assets/appliances.jpg";
+import refrigerationDetail from "../assets/detail.jpg";
+import image4 from "../assets/image 4.jpeg";
+import image5 from "../assets/image 5.jpeg";
+import image6 from "../assets/image 6.jpeg";
+import image7 from "../assets/image 7.jpeg";
 
 const images = [
   {
-    src: hero,
-    alt: "Technician servicing a high-efficiency furnace",
-    span: "lg:col-span-2 lg:row-span-2",
+    src: heroTech,
+    alt: "Technician repairing an outdoor HVAC unit on a rooftop",
+    span: "sm:col-span-2 md:col-span-2 md:row-span-2",
     width: 1600,
-    height: 1100,
+    height: 1067,
   },
   {
-    src: hvac,
-    alt: "Air conditioner condenser maintenance at a residence",
-    width: 1200,
-    height: 900,
-  },
-  {
-    src: refrigeration,
-    alt: "Commercial walk-in refrigeration installation",
-    width: 1200,
-    height: 900,
-  },
-  {
-    src: process,
-    alt: "Ductwork installation in a new home",
-    span: "lg:col-span-2",
+    src: outdoorService,
+    alt: "HVAC technician servicing an air conditioner condenser beside a home",
+    span: "sm:col-span-1",
     width: 1600,
-    height: 1000,
+    height: 1067,
   },
   {
-    src: appliances,
-    alt: "Luxury kitchen with high-end built-in appliances",
-    width: 1200,
-    height: 900,
+    src: installCrew,
+    alt: "HVAC installation team fitting ductwork in a new construction space",
+    span: "sm:col-span-1",
+    width: 1600,
+    height: 1067,
   },
   {
-    src: detail,
-    alt: "Refrigerant manifold gauges during system charging",
-    width: 1200,
-    height: 900,
+    src: premiumAppliances,
+    alt: "Luxury kitchen with premium built-in appliances and clean cabinetry",
+    span: "sm:col-span-2 md:col-span-2",
+    width: 1600,
+    height: 1067,
   },
   {
-    src: thermostat,
-    alt: "Smart thermostat installation in a living room",
-    width: 1200,
-    height: 900,
+    src: image4,
+    alt: "HVAC image",
+    span: "sm:col-span-1 md:col-span-1",
+    width: 1600,
+    height: 1067,
   },
   {
-    src: wine,
-    alt: "Built-in wine cooler in a custom cabinetry install",
-    width: 1200,
-    height: 900,
+    src: image5,
+    alt: "microwave and oven installation",
+    span: "sm:col-span-1 md:col-span-1",
+    width: 1600,
+    height: 1067,
+  },
+  {
+    src: image6,
+    alt: "appliance installation",
+    span: "sm:col-span-1 md:col-span-1",
+    width: 1600,
+    height: 1067,
+  },
+  {
+    src: image7,
+    alt: "Appliance installation",
+    span: "sm:col-span-1 md:col-span-1",
+    width: 1600,
+    height: 1067,
   },
 ];
 
@@ -92,19 +99,21 @@ export function Gallery() {
       <div className="container-x">
         <SectionHeading
           eyebrow="Our Work"
-          title="Installations and service calls from the field"
-          text="A look at recent HVAC, refrigeration and premium appliance projects across our service area."
+          title="Clean installs and dependable service work"
+          text="A curated look at the kind of HVAC, refrigeration and appliance projects we take pride in delivering."
         />
-        <RevealGroup className="mt-12 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4 lg:auto-rows-[13rem]">
+
+        <RevealGroup className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4 xl:auto-rows-[240px]">
           {images.map((img) => (
-            <RevealItem key={img.alt} className={img.span ?? ""}>
+            <RevealItem key={img.alt} className={img.span ?? "sm:col-span-1"}>
               <button
                 type="button"
+                aria-label={`View larger image: ${img.alt}`}
                 onClick={(event) => {
                   openerRef.current = event.currentTarget;
                   setActive(img);
                 }}
-                className="group block h-full w-full overflow-hidden rounded-xl border border-border bg-card"
+                className="group block h-full w-full overflow-hidden rounded-2xl border border-border bg-card shadow-sm ring-1 ring-black/5 transition-all duration-300 hover:shadow-lg"
               >
                 <img
                   src={img.src}
@@ -112,7 +121,7 @@ export function Gallery() {
                   loading="lazy"
                   width={img.width}
                   height={img.height}
-                  className="aspect-[4/3] h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.06] lg:aspect-auto"
+                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                 />
               </button>
             </RevealItem>
@@ -140,7 +149,7 @@ export function Gallery() {
               onClick={() => setActive(null)}
               ref={closeRef}
               aria-label="Close image"
-              className="absolute right-5 top-5 rounded-md border border-ink-foreground/25 p-2 text-ink-foreground"
+              className="absolute right-5 top-5 rounded-md border border-ink-foreground/25 bg-white/5 p-2 text-ink-foreground backdrop-blur-sm"
             >
               <X className="h-5 w-5" />
             </button>
@@ -151,7 +160,7 @@ export function Gallery() {
               src={active.src}
               alt={active.alt}
               onClick={(event) => event.stopPropagation()}
-              className="max-h-[85vh] w-auto max-w-full rounded-xl object-contain"
+              className="max-h-[85vh] w-auto max-w-full rounded-xl object-contain shadow-2xl"
             />
           </motion.div>
         ) : null}

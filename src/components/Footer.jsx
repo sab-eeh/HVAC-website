@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Wind } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { serviceNav } from "../data/navigation";
 import { siteConfig } from "../data/siteConfig";
 
@@ -10,11 +10,12 @@ export function Footer() {
     <footer className="bg-ink text-ink-foreground">
       <div className="container-x grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-5 lg:py-20">
         <div className="lg:col-span-1">
-          <div className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-md bg-ink-foreground/10">
-              <Wind className="h-4.5 w-4.5 text-primary" aria-hidden="true" />
-            </span>
-            <span className="font-display text-base font-bold">{siteConfig.name}</span>
+          <div className="flex items-center">
+            <img
+              src="/footer%20logo.png"
+              alt={`${siteConfig.name} logo`}
+              className="h-14 w-auto max-w-[210px] object-contain drop-shadow-sm"
+            />
           </div>
           <p className="mt-4 text-sm leading-relaxed text-ink-foreground/65">
             Heating, cooling, refrigeration and high-end appliance service for{" "}

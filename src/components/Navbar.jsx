@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { AnimatePresence } from "framer-motion";
-import { ChevronDown, Menu, X, Phone, Wind } from "lucide-react";
+import { ChevronDown, Menu, X, Phone } from "lucide-react";
 import { mainNav } from "../data/navigation";
 import { siteConfig } from "../data/siteConfig";
 import ServicesMenu from "./ServicesMenu";
@@ -50,18 +50,12 @@ export function Navbar() {
       onKeyDown={(e) => e.key === "Escape" && setServicesOpen(false)}
     >
       <div className="container-x flex h-20 items-center justify-between gap-6">
-        <Link to="/" className="flex items-center gap-2.5" aria-label={`${siteConfig.name} home`}>
-          <span className="flex h-9 w-9 items-center justify-center rounded-md bg-ink text-ink-foreground">
-            <Wind className="h-4.5 w-4.5 text-primary" aria-hidden="true" />
-          </span>
-          <span className="leading-tight">
-            <span className="block font-display text-base font-bold tracking-tight">
-              {siteConfig.shortName}
-            </span>
-            <span className="block text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-              Mechanical
-            </span>
-          </span>
+        <Link to="/" className="flex items-center" aria-label={`${siteConfig.name} home`}>
+          <img
+            src="/header%20logo.png"
+            alt={`${siteConfig.name} logo`}
+            className="h-10 w-auto max-w-[170px] object-contain drop-shadow-sm sm:h-11 md:h-12"
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">

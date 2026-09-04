@@ -1,11 +1,11 @@
 import { Check } from "lucide-react";
-import detailImg from "../assets/detail.jpg";
+import inspection from "../assets/image 1.jfif";
 import { siteConfig } from "../data/siteConfig";
 import { Reveal, RevealGroup, RevealItem } from "./Reveal";
 import Button from "./Button";
 
 export function WhyChooseUs({
-  image = detailImg,
+  image = inspection,
   imageAlt = "Technician checking refrigerant pressures",
 }) {
   return (
