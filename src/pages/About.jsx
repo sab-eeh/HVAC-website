@@ -19,7 +19,7 @@ export function About() {
         title="A technician-led mechanical company built on doing it properly"
         text={`${siteConfig.name} has served ${siteConfig.serviceArea} for more than ${siteConfig.yearsExperience} years — heating, cooling, refrigeration and high-end appliance service under one roof.`}
         image={heroImg}
-        imageAlt="Northline technician servicing a furnace"
+        imageAlt="Advance Thermo Care technician servicing a furnace"
         crumbs={[{ label: "Home", to: "/" }, { label: "About" }]}
       />
 

@@ -18,7 +18,7 @@ export const testimonials = [
     service: "Sub-Zero Refrigerator Repair — Huntley",
     rating: 5,
     quote:
-      "Two other companies wouldn't touch our built-in Sub-Zero. Northline diagnosed a sealed-system issue, sourced the correct parts, and it's run perfectly since.",
+      "Two other companies wouldn't touch our built-in Sub-Zero. Advance Thermo Care diagnosed a sealed-system issue, sourced the correct parts, and it's run perfectly since.",
   },
 ];
 

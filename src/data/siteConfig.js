@@ -1,6 +1,8 @@
 export const siteConfig = {
-  name: "Northline Mechanical",
-  shortName: "Northline",
+  name: "Advance Thermo Care",
+  shortName: "Advance Thermo Care",
+  siteUrl: (import.meta.env.VITE_SITE_URL || "https://advancethermocare.com").replace(/\/$/, ""),
+  logo: "/header logo.png",
   tagline: "HVAC | Refrigeration | High-End Appliance Services",
   phone: "708 981 9065",
   phoneHref: "tel:+17089819065",

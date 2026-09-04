@@ -12,6 +12,7 @@ import { MotionConfig } from "framer-motion";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { localBusinessSchema } from "../lib/seo";
 // @ts-expect-error - JSX component
 import Navbar from "../components/Navbar";
 // @ts-expect-error - JSX component
@@ -82,21 +83,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Northline Mechanical | HVAC, Refrigeration & Appliance Service" },
+      { title: "Advance Thermo Care | HVAC, Refrigeration & Appliance Service" },
       {
         name: "description",
-        content: "Premium HVAC, refrigeration and high-end appliance service in Pingree Grove, IL.",
+        content:
+          "Trusted HVAC, refrigeration and high-end appliance service in Pingree Grove, IL and surrounding areas.",
       },
-      { property: "og:site_name", content: "Northline Mechanical" },
+      { property: "og:site_name", content: "Advance Thermo Care" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
-        content: "Northline Mechanical | HVAC, Refrigeration & Appliance Service",
+        content: "Advance Thermo Care | HVAC, Refrigeration & Appliance Service",
       },
       {
         name: "twitter:description",
-        content: "Premium HVAC, refrigeration and high-end appliance service in Pingree Grove, IL.",
+        content:
+          "Trusted HVAC, refrigeration and high-end appliance service in Pingree Grove, IL and surrounding areas.",
       },
     ],
     links: [
@@ -115,36 +118,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     scripts: [
       {
         type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "HVACBusiness",
-          name: "Northline Mechanical",
-          telephone: "+1-708-981-9065",
-          email: "Hasanraza@sbcglobal.net",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "1331 Sedona Dr",
-            addressLocality: "Pingree Grove",
-            addressRegion: "IL",
-            postalCode: "60140",
-            addressCountry: "US",
-          },
-          areaServed: "Pingree Grove, IL",
-          openingHoursSpecification: [
-            {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-              opens: "07:00",
-              closes: "17:00",
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: "Saturday",
-              opens: "09:00",
-              closes: "14:00",
-            },
-          ],
-        }),
+        children: JSON.stringify(localBusinessSchema()),
       },
     ],
   }),
