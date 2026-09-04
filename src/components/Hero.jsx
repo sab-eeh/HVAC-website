@@ -57,10 +57,7 @@ export function Hero() {
           }}
           className="w-full max-w-3xl"
         >
-          <motion.p
-            variants={item}
-            className="eyebrow !text-primary"
-          >
+          <motion.p variants={item} className="eyebrow !text-primary">
             {siteConfig.serviceArea}
           </motion.p>
 
@@ -68,27 +65,21 @@ export function Hero() {
             variants={item}
             className="mt-4 max-w-3xl text-[2.7rem] font-bold leading-[1.02] tracking-tight sm:text-5xl lg:text-[4.5rem]"
           >
-            HVAC{" "}
-            <span className="text-white/45">|</span> Refrigeration{" "}
+            HVAC <span className="text-white/45">|</span> Refrigeration{" "}
             <span className="text-white/45">|</span>{" "}
-            <span className="text-primary">High-End Appliance</span>{" "}
-            Services
+            <span className="text-primary">High-End Appliance</span> Services
           </motion.h1>
 
           <motion.p
             variants={item}
             className="mt-6 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg"
           >
-            Professional heating, cooling, refrigeration and luxury appliance
-            service backed by {siteConfig.yearsExperience}+ years in the field.
-            Precise diagnostics, honest recommendations and workmanship that
-            holds up — season after season.
+            Professional heating, cooling, refrigeration and high-end appliance service backed by{" "}
+            {siteConfig.yearsExperience}+ years in the field. Precise diagnostics, honest
+            recommendations and workmanship that holds up season after season.
           </motion.p>
 
-          <motion.div
-            variants={item}
-            className="mt-8 flex flex-col gap-3 sm:flex-row"
-          >
+          <motion.div variants={item} className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button to="/contact" size="lg">
               Schedule Service
             </Button>
@@ -99,10 +90,7 @@ export function Hero() {
               size="lg"
               className="border-white/50 bg-white/5 text-white backdrop-blur-sm hover:bg-white hover:text-foreground"
             >
-              <Phone
-                className="h-4 w-4"
-                aria-hidden="true"
-              />
+              <Phone className="h-4 w-4" aria-hidden="true" />
               Call {siteConfig.phone}
             </Button>
           </motion.div>
@@ -112,26 +100,17 @@ export function Hero() {
             className="mt-10 flex flex-wrap gap-x-8 gap-y-4 text-sm font-medium text-white/90"
           >
             <li className="flex items-center gap-2">
-              <ShieldCheck
-                className="h-4 w-4 text-primary"
-                aria-hidden="true"
-              />
+              <ShieldCheck className="h-4 w-4 text-primary" aria-hidden="true" />
               Licensed & insured
             </li>
 
             <li className="flex items-center gap-2">
-              <Clock
-                className="h-4 w-4 text-primary"
-                aria-hidden="true"
-              />
+              <Clock className="h-4 w-4 text-primary" aria-hidden="true" />
               {siteConfig.availability}
             </li>
 
             <li className="flex items-center gap-2">
-              <Star
-                className="h-4 w-4 text-primary"
-                aria-hidden="true"
-              />
+              <Star className="h-4 w-4 text-primary" aria-hidden="true" />
               5-star rated locally
             </li>
           </motion.ul>
