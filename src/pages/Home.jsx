@@ -31,9 +31,12 @@ export function Home() {
               title={cat.title}
               description={cat.short}
               image={cat.image}
-              items={getServicesByCategory(cat.slug).map((s) =>
-                s.title.replace(/ (Services|Appliance Service)$/, ""),
-              )}
+              items={
+                cat.cardItems ??
+                getServicesByCategory(cat.slug).map((s) =>
+                  s.title.replace(/ (Services|Appliance Service)$/, ""),
+                )
+              }
               to={`/${cat.slug}`}
             />
           ))}

@@ -31,6 +31,7 @@ export const categories = [
     title: "High-End Appliances",
     heading: "Luxury Appliance Service",
     short: "Sub-Zero, Viking, Thermador, Wolf and KitchenAid specialists.",
+    cardItems: ["Refrigerator", "Oven Range", "Microwave", "Dryer", "Washer"],
     description:
       "Premium appliances need technicians who know their platforms. We repair built-in refrigeration, pro ranges, ovens and integrated units with OEM-grade parts and careful, cabinetry-safe workmanship.",
     image: appliancesImg,
