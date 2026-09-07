@@ -19,21 +19,22 @@ export const categories = [
   },
   {
     slug: "refrigeration",
-    title: "Refrigeration",
-    heading: "Commercial & Residential Refrigeration",
-    short: "Condensers, evaporators, walk-in coolers, refrigerators and wine storage.",
-    description:
-      "Refrigeration keeps inventory and food safe, and downtime is expensive. We service sealed systems, condensing units, evaporators and walk-ins with the diagnostic depth these systems require.",
+    title: "Refrigeration Repair & Service",
+heading: "Commercial & Residential Refrigeration Repair",
+short:
+  "Professional refrigeration repair for walk-in coolers, refrigerators, condensers and evaporators in Pingree Grove, IL and surrounding areas.",
+description:
+  "We provide commercial and residential refrigeration repair throughout Pingree Grove, IL and nearby communities. Our team services walk-in coolers, free-standing refrigerators, wine coolers, condensers, evaporators and other refrigeration systems with accurate diagnostics, reliable repairs and professional service.",
     image: refrigerationImg,
   },
   {
     slug: "high-end-appliances",
-    title: "High-End Appliances",
-    heading: "Luxury Appliance Service",
-    short: "Sub-Zero, Viking, Thermador, Wolf and KitchenAid specialists.",
-    cardItems: ["Refrigerator", "Oven Range", "Microwave", "Dryer", "Washer"],
+    title: "High-End Appliance Repair",
+    heading: "Luxury Appliance Repair & Service",
+    short:
+         "Professional Sub-Zero, Viking, Thermador, Wolf and KitchenAid appliance repair in Pingree Grove, IL and surrounding areas.",
     description:
-      "Premium appliances need technicians who know their platforms. We repair built-in refrigeration, pro ranges, ovens and integrated units with OEM-grade parts and careful, cabinetry-safe workmanship.",
+         "We provide high-end appliance repair for built-in refrigerators, professional ranges, ovens, microwaves, washers and dryers throughout Pingree Grove, IL and nearby communities. Our technicians service premium brands including Sub-Zero, Viking, Thermador, Wolf and KitchenAid with accurate diagnostics and reliable repairs.",
     image: appliancesImg,
   },
 ];
@@ -44,10 +45,11 @@ export const services = [
     slug: "furnaces",
     category: "hvac",
     categoryTitle: "HVAC",
-    title: "Furnace Services",
-    short: "Repair, maintenance and high-efficiency furnace installation.",
+    title: "Furnace Repair & Heating Services",
+    short:
+        "Professional furnace repair, maintenance and installation in Pingree Grove, IL and surrounding areas.",
     description:
-      "From no-heat emergencies to planned replacement, we service gas, electric and high-efficiency condensing furnaces. Every visit includes combustion, airflow and safety verification — not just a parts swap.",
+        "Need furnace repair or heating service? We diagnose and repair gas, electric and high-efficiency furnaces throughout Pingree Grove, IL and nearby communities. From no-heat problems and failed igniters to maintenance and furnace replacement, we provide reliable diagnostics, airflow checks and safety testing.",
     image: heroImg,
     commonProblems: [
       "Furnace runs but blows cold air",
@@ -88,10 +90,11 @@ export const services = [
     slug: "air-conditioners",
     category: "hvac",
     categoryTitle: "HVAC",
-    title: "Air Conditioner Services",
-    short: "AC repair, seasonal maintenance and efficient system replacement.",
+    title: "AC Repair & Air Conditioning Services",
+    short:
+           "Professional AC repair, maintenance and air conditioning service in Pingree Grove, IL and surrounding areas.",
     description:
-      "Central air, ductless mini-splits and high-SEER systems. We measure refrigerant charge, superheat and airflow so your system cools evenly instead of just running.",
+           "Need AC repair or air conditioning service? We diagnose and repair central air systems, ductless mini-splits and high-efficiency cooling systems throughout Pingree Grove, IL and nearby communities. From weak cooling and frozen coils to refrigerant leaks, maintenance and system replacement, we provide reliable diagnostics and professional service.",
     image: hvacImg,
     commonProblems: [
       "System runs but the house never cools",
@@ -132,10 +135,11 @@ export const services = [
     slug: "heat-pumps-ductwork",
     category: "hvac",
     categoryTitle: "HVAC",
-    title: "Heat Pumps & Ductwork",
-    short: "Heat pump service plus duct design, sealing and repair.",
-    description:
-      "Heat pumps only perform as well as the duct system behind them. We service cold-climate and dual-fuel heat pumps, and design, seal and repair ductwork for real-world airflow.",
+    title: "Heat Pump Repair & Ductwork Services",
+short:
+  "Professional heat pump repair, maintenance and ductwork service in Pingree Grove, IL and surrounding areas.",
+description:
+  "We provide heat pump repair, maintenance and ductwork services throughout Pingree Grove, IL and nearby communities. Our team services cold-climate and dual-fuel heat pumps, diagnoses airflow problems, and handles duct sealing, repairs and system improvements for more reliable heating and cooling.",
     image: processImg,
     commonProblems: [
       "Heat pump not switching between heating and cooling",
@@ -173,10 +177,11 @@ export const services = [
     slug: "thermostats",
     category: "hvac",
     categoryTitle: "HVAC",
-    title: "Thermostats & Controls",
-    short: "Smart thermostat installation, wiring and system integration.",
-    description:
-      "Correct control wiring is the difference between a smart thermostat that saves energy and one that damages equipment. We install, configure and integrate controls for single and multi-stage systems.",
+    title: "Thermostat Installation & Repair",
+short:
+  "Smart thermostat installation, repair and system integration in Pingree Grove, IL and surrounding areas.",
+description:
+  "We provide thermostat installation, repair and control setup throughout Pingree Grove, IL and nearby communities. Our team works with smart thermostats, multi-stage systems, C-wire installation, sensors and zone controls to improve comfort, efficiency and reliable HVAC operation.",
     image: thermostatImg,
     commonProblems: [
       "Thermostat blank or losing power",

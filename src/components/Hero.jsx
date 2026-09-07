@@ -55,7 +55,7 @@ export function Hero() {
               },
             },
           }}
-          className="w-full max-w-3xl"
+          className="w-full max-w-6xl"
         >
           <motion.p variants={item} className="eyebrow !text-primary">
             {siteConfig.serviceArea}
@@ -63,23 +63,25 @@ export function Hero() {
 
           <motion.h1
             variants={item}
-            className="mt-4 max-w-3xl text-[2.7rem] font-bold leading-[1.02] tracking-tight sm:text-5xl lg:text-[4.5rem]"
+            className="mt-4 max-w-6xl text-[2.7rem] font-bold leading-[1.02] tracking-tight sm:text-5xl lg:text-[4rem]"
           >
-            HVAC <span className="text-white/45">|</span> Refrigeration{" "}
-            <span className="text-white/45">|</span>{" "}
-            <span className="text-primary">High-End Appliance</span> Services
+            HVAC, Refrigeration & Appliance Repair in Pingree Grove, IL
           </motion.h1>
 
           <motion.p
             variants={item}
             className="mt-6 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg"
           >
-            Professional heating, cooling, refrigeration and high-end appliance service backed by{" "}
-            {siteConfig.yearsExperience}+ years in the field. Precise diagnostics, honest
-            recommendations and workmanship that holds up season after season.
+            Professional HVAC repair, heating and cooling service, refrigeration repair,
+            and high-end appliance repair in Pingree Grove, IL and surrounding areas.
+            Backed by {siteConfig.yearsExperience}+ years of experience with precise
+            diagnostics, honest recommendations and reliable workmanship.
           </motion.p>
 
-          <motion.div variants={item} className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <motion.div
+            variants={item}
+            className="mt-8 flex flex-col gap-3 sm:flex-row"
+          >
             <Button to="/contact" size="lg">
               Schedule Service
             </Button>
@@ -100,7 +102,10 @@ export function Hero() {
             className="mt-10 flex flex-wrap gap-x-8 gap-y-4 text-sm font-medium text-white/90"
           >
             <li className="flex items-center gap-2">
-              <ShieldCheck className="h-4 w-4 text-primary" aria-hidden="true" />
+              <ShieldCheck
+                className="h-4 w-4 text-primary"
+                aria-hidden="true"
+              />
               Licensed & insured
             </li>
 
