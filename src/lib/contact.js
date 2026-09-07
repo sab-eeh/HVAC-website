@@ -16,8 +16,54 @@ export const submitContactRequest = createServerFn({ method: "POST" })
     const request = normalizeContactRequest(validation.data);
 
     try {
-      const { insertContactRequest } = await import("../server/contact/repository");
-      await insertContactRequest(request);
+      const [
+        { insertContactRequest, updateContactEmailStatus },
+        { sendOwnerNotification, sendCustomerConfirmation },
+      ] = await Promise.all([
+        import("../server/contact/repository"),
+        import("../server/contact/email"),
+      ]);
+      const requestId = await insertContactRequest(request);
+      console.info("Contact request created", requestId);
+
+      try {
+        await sendOwnerNotification(request);
+        await safelyUpdateEmailStatus(
+          updateContactEmailStatus,
+          requestId,
+          "notification_email",
+          "sent",
+        );
+        console.info("Owner notification sent", requestId);
+      } catch {
+        await safelyUpdateEmailStatus(
+          updateContactEmailStatus,
+          requestId,
+          "notification_email",
+          "failed",
+        );
+        console.info("Owner notification failed", requestId);
+      }
+
+      try {
+        await sendCustomerConfirmation(request);
+        await safelyUpdateEmailStatus(
+          updateContactEmailStatus,
+          requestId,
+          "customer_email",
+          "sent",
+        );
+        console.info("Customer confirmation sent", requestId);
+      } catch {
+        await safelyUpdateEmailStatus(
+          updateContactEmailStatus,
+          requestId,
+          "customer_email",
+          "failed",
+        );
+        console.info("Customer confirmation failed", requestId);
+      }
+
       return { success: true };
     } catch (error) {
       if (error instanceof Error && error.message === "Contact request persistence failed") {
@@ -40,4 +86,12 @@ function normalizeContactRequest(data) {
     requested_time: data.time ?? null,
     message: data.message ?? null,
   };
+}
+
+async function safelyUpdateEmailStatus(updateContactEmailStatus, requestId, field, status) {
+  try {
+    await updateContactEmailStatus(requestId, field, status);
+  } catch {
+    console.info("Contact email status update failed", requestId);
+  }
 }

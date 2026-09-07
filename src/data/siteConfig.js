@@ -6,8 +6,8 @@ export const siteConfig = {
   tagline: "HVAC | Refrigeration | High-End Appliance Services",
   phone: "708 981 9065",
   phoneHref: "tel:+17089819065",
-  email: "Hasanraza@sbcglobal.net",
-  emailHref: "mailto:Hasanraza@sbcglobal.net",
+  email: "service@advancethermocare.com",
+  emailHref: "mailto:service@advancethermocare.com",
   address: "1331 Sedona Dr, Pingree Grove, IL 60140",
   serviceArea: "Pingree Grove & Surrounding Areas",
   areasServed: [
