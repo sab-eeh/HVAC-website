@@ -38,6 +38,12 @@ export const siteConfig = {
   "Carol Stream, IL",
   "Wood Dale, IL",
   "Batavia, IL",
+  "Burlington, IL",
+"Genoa, IL",
+"Marengo, IL",
+"Sycamore, IL",
+"Union, IL",
+"Campton Hills, IL",
 ],
   
   hours: [
