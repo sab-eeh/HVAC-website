@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Phone, ShieldCheck, Clock, Star } from "lucide-react";
 
-import heroImg from "../assets/hero-image.webp";
+import heroImg from "../assets/hero-image2.webp";
 
 import { siteConfig } from "../data/siteConfig";
 
