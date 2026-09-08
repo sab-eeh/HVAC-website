@@ -30,7 +30,7 @@ description:
   {
     slug: "high-end-appliances",
     title: "High-End Appliance Repair",
-    heading: "Luxury Appliance Repair & Service",
+    heading: "High-End Appliance Repair & Service",
     short:
          "Professional Sub-Zero, Viking, Thermador, Wolf and KitchenAid appliance repair in Pingree Grove, IL and surrounding areas.",
     description:
