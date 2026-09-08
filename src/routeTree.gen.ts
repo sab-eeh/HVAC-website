@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ServiceAreasRouteImport } from './routes/service-areas'
 import { Route as HighEndAppliancesIndexRouteImport } from './routes/high-end-appliances.index'
 import { Route as HighEndAppliancesSlugRouteImport } from './routes/high-end-appliances.$slug'
 import { Route as HvacIndexRouteImport } from './routes/hvac.index'
@@ -32,6 +33,11 @@ const AboutRoute = AboutRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServiceAreasRoute = ServiceAreasRouteImport.update({
+  id: '/service-areas',
+  path: '/service-areas',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HighEndAppliancesIndexRoute = HighEndAppliancesIndexRouteImport.update({
@@ -69,6 +75,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/service-areas': typeof ServiceAreasRoute
   '/high-end-appliances/$slug': typeof HighEndAppliancesSlugRoute
   '/hvac/$slug': typeof HvacSlugRoute
   '/refrigeration/$slug': typeof RefrigerationSlugRoute
@@ -80,6 +87,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/service-areas': typeof ServiceAreasRoute
   '/high-end-appliances/$slug': typeof HighEndAppliancesSlugRoute
   '/hvac/$slug': typeof HvacSlugRoute
   '/refrigeration/$slug': typeof RefrigerationSlugRoute
@@ -92,6 +100,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/service-areas': typeof ServiceAreasRoute
   '/high-end-appliances/$slug': typeof HighEndAppliancesSlugRoute
   '/hvac/$slug': typeof HvacSlugRoute
   '/refrigeration/$slug': typeof RefrigerationSlugRoute
@@ -105,6 +114,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
+    | '/service-areas'
     | '/high-end-appliances/$slug'
     | '/hvac/$slug'
     | '/refrigeration/$slug'
@@ -116,6 +126,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
+    | '/service-areas'
     | '/high-end-appliances/$slug'
     | '/hvac/$slug'
     | '/refrigeration/$slug'
@@ -127,6 +138,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
+    | '/service-areas'
     | '/high-end-appliances/$slug'
     | '/hvac/$slug'
     | '/refrigeration/$slug'
@@ -139,6 +151,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
+  ServiceAreasRoute: typeof ServiceAreasRoute
   HighEndAppliancesSlugRoute: typeof HighEndAppliancesSlugRoute
   HvacSlugRoute: typeof HvacSlugRoute
   RefrigerationSlugRoute: typeof RefrigerationSlugRoute
@@ -168,6 +181,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/service-areas': {
+      id: '/service-areas'
+      path: '/service-areas'
+      fullPath: '/service-areas'
+      preLoaderRoute: typeof ServiceAreasRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/high-end-appliances/': {
@@ -219,6 +239,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
+  ServiceAreasRoute: ServiceAreasRoute,
   HighEndAppliancesSlugRoute: HighEndAppliancesSlugRoute,
   HvacSlugRoute: HvacSlugRoute,
   RefrigerationSlugRoute: RefrigerationSlugRoute,
