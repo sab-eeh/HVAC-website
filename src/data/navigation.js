@@ -3,6 +3,7 @@ import { categories, getServicesByCategory } from "./services";
 export const mainNav = [
   { label: "Home", to: "/" },
   { label: "About Us", to: "/about" },
+  { label: "Service Areas", to: "/service-areas" },
   { label: "Contact Us", to: "/contact" },
 ];
 
