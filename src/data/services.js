@@ -47,9 +47,9 @@ export const services = [
     categoryTitle: "HVAC",
     title: "Furnace Repair & Heating Services",
     short:
-        "Professional furnace repair, maintenance and installation in Pingree Grove, IL and surrounding areas.",
+       "Professional furnace repair, maintenance and installation in Pingree Grove, IL and nearby service areas.",
     description:
-        "Need furnace repair or heating service? We diagnose and repair gas, electric and high-efficiency furnaces throughout Pingree Grove, IL and nearby communities. From no-heat problems and failed igniters to maintenance and furnace replacement, we provide reliable diagnostics, airflow checks and safety testing.",
+        "Looking for furnace repair in Pingree Grove, IL? Advance Thermo Care diagnoses and repairs gas, electric and high-efficiency furnaces, including no-heat issues, ignition problems, airflow faults and system breakdowns.",
     image: heroImg,
     commonProblems: [
       "Furnace runs but blows cold air",
