@@ -22,7 +22,7 @@ export function Home() {
         <SectionHeading
           eyebrow="What We Do"
           title="Three specialties, one trusted team"
-          text="Heating and cooling, commercial and residential refrigeration, and factory-level service for premium appliance brands."
+          text="Residential and light-commercial heating and cooling, commercial and residential refrigeration, and factory-level service for premium appliances."
         />
         <RevealGroup className="mt-12 grid gap-6 lg:grid-cols-3">
           {categories.map((cat) => (
