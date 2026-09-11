@@ -92,9 +92,9 @@ export const services = [
     categoryTitle: "HVAC",
     title: "AC Repair & Air Conditioning Services",
     short:
-           "Professional AC repair, maintenance and air conditioning service in Pingree Grove, IL and surrounding areas.",
+           "Professional AC repair, maintenance and air conditioning service in Pingree Grove, IL and nearby service areas.",
     description:
-           "Need AC repair or air conditioning service? We diagnose and repair central air systems, ductless mini-splits and high-efficiency cooling systems throughout Pingree Grove, IL and nearby communities. From weak cooling and frozen coils to refrigerant leaks, maintenance and system replacement, we provide reliable diagnostics and professional service.",
+           "Looking for AC repair in Pingree Grove, IL? Advance Thermo Care diagnoses and repairs central air conditioning systems, including cooling problems, refrigerant issues, frozen coils, electrical faults and system breakdowns.",
     image: hvacImg,
     commonProblems: [
       "System runs but the house never cools",
