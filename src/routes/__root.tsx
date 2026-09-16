@@ -83,6 +83,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "msvalidate.01", content: "5398EBE70E3F0D93F3321B899E3CD99A" },
       { title: "Advance Thermo Care | HVAC, Refrigeration & Appliance Service" },
       {
         name: "description",
