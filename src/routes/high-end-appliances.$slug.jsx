@@ -12,7 +12,7 @@ export const Route = createFileRoute("/high-end-appliances/$slug")({
     if (!service) {
       return { meta: [{ title: "Service not found" }, { name: "robots", content: "noindex" }] };
     }
-    const title = `${service.title} in Pingree Grove, IL | Advance Thermo Care`;
+    const title = `${service.title} | Pingree Grove, IL`;
     const path = `/high-end-appliances/${params.slug}`;
     return {
       ...pageHead({ title, description: service.short, path, type: "article" }),
