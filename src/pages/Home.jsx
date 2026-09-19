@@ -41,6 +41,15 @@ export function Home() {
             />
           ))}
         </RevealGroup>
+        <p className="mt-8 text-center text-sm text-muted-foreground">
+  Need heating help?{" "}
+  <a
+    href="/hvac/furnaces"
+    className="font-medium text-primary underline underline-offset-4"
+  >
+    Furnace Repair in Pingree Grove, IL
+  </a>
+</p>
       </section>
 
       <ServiceArea />
