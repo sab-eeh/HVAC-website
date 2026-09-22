@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Advance Thermo Care",
   shortName: "Advance Thermo Care",
-  siteUrl: (import.meta.env.VITE_SITE_URL || "https://advancethermocare.com").replace(/\/$/, ""),
+  siteUrl: (import.meta.env.VITE_SITE_URL || "https://www.advancethermocare.com").replace(/\/$/, ""),
   logo: "/header logo.png",
   tagline: "HVAC | Refrigeration | High-End Appliance Services",
   phone: "708 981 9065",
