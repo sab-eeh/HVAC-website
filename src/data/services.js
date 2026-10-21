@@ -136,10 +136,9 @@ export const services = [
     category: "hvac",
     categoryTitle: "HVAC",
     title: "Heat Pump Repair & Ductwork Services",
-short:
-  "Professional heat pump repair, maintenance and ductwork service in Pingree Grove, IL and surrounding areas.",
+  short: "Need heat pump repair in Pingree Grove, IL? Advance Thermo Care provides professional heat pump repair, maintenance, and ductwork services for reliable heating and cooling.",
 description:
-  "We provide heat pump repair, maintenance and ductwork services throughout Pingree Grove, IL and nearby communities. Our team services cold-climate and dual-fuel heat pumps, diagnoses airflow problems, and handles duct sealing, repairs and system improvements for more reliable heating and cooling.",
+  "Advance Thermo Care provides professional heat pump repair, maintenance and ductwork services in Pingree Grove, IL and surrounding areas. We diagnose and repair common heat pump problems including heating and cooling issues, ice buildup, airflow problems, reversing valve failures and auxiliary heat operation. We also design, seal and repair ductwork to improve system performance and comfort.",
     image: processImg,
     commonProblems: [
       "Heat pump not switching between heating and cooling",
@@ -148,30 +147,43 @@ description:
       "Rooms that never reach temperature",
       "Leaky, undersized or crushed ducts",
     ],
-    solutions: [
-      "Reversing valve and defrost board diagnostics",
-      "Dual-fuel and balance-point setup",
-      "Static pressure and airflow testing",
-      "Duct sealing, insulation and re-runs",
-      "Zoning and register balancing",
-    ],
-    benefits: [
-      "Efficient heating well below freezing",
-      "Balanced temperatures floor to floor",
-      "Less duct loss and lower operating cost",
-      "Quieter airflow",
-    ],
+   solutions: [
+  "Heat pump heating and cooling diagnostics",
+  "Reversing valve and defrost system diagnostics",
+  "Auxiliary and emergency heat troubleshooting",
+  "Static pressure and airflow testing",
+  "Duct sealing, insulation and repair",
+  "Zoning and register balancing",
+],
+   benefits: [
+  "Reliable heating and cooling performance",
+  "Better comfort and balanced temperatures",
+  "Improved airflow with less duct loss",
+  "Efficient operation in cold weather",
+  "Reduced strain from properly maintained equipment",
+],
     faqs: [
-      {
-        q: "Do heat pumps work in Illinois winters?",
-        a: "Modern cold-climate and dual-fuel systems do. We set the balance point so the backup only runs when it should.",
-      },
-      {
-        q: "How do I know if my ducts leak?",
-        a: "Hot and cold rooms, dusty returns and high bills are the usual signs. We measure static pressure to confirm.",
-      },
-      { q: "Can you add zoning?", a: "Yes, on most systems with adequate duct capacity." },
-    ],
+  {
+    q: "What are the signs that a heat pump needs repair?",
+    a: "Common signs include poor heating or cooling, weak airflow, unusual noises, ice buildup, frequent cycling, or a heat pump that runs continuously. Professional diagnosis can identify the cause and determine the right repair.",
+  },
+  {
+    q: "Why is my heat pump not heating or cooling properly?",
+    a: "Several issues can cause poor heating or cooling, including airflow restrictions, refrigerant problems, reversing valve issues, defrost system problems, or incorrect controls. We inspect the system to identify the cause.",
+  },
+  {
+    q: "Why is my heat pump covered in ice?",
+    a: "Some frost can be normal during winter, but excessive ice can indicate airflow restrictions, defrost problems, refrigerant issues, or other equipment problems. A technician should inspect the system before the issue gets worse.",
+  },
+  {
+    q: "How often should a heat pump be serviced?",
+    a: "Regular professional maintenance helps keep a heat pump operating efficiently and can identify developing problems before they become major repairs. We recommend having the system inspected regularly based on its age and usage.",
+  },
+  {
+    q: "Do you provide heat pump repair in Pingree Grove, IL?",
+    a: "Yes. Advance Thermo Care provides heat pump repair, maintenance, and ductwork services in Pingree Grove, IL and surrounding areas.",
+  },
+],
   },
   {
     slug: "thermostats",

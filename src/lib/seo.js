@@ -72,7 +72,7 @@ export function serviceSchema(service, path) {
     url: absoluteUrl(path),
     provider: { "@id": `${siteConfig.siteUrl}/#business` },
     areaServed: siteConfig.areasServed.map((name) => ({ "@type": "City", name })),
-    serviceType: service.categoryTitle,
+    serviceType: service.title,
   };
 }
 

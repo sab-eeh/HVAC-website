@@ -34,11 +34,27 @@ export function ServiceDetailPage({ categorySlug, slug }) {
       <section className="container-x py-20 lg:py-28">
         <div className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
           <div>
-            <SectionHeading
-              eyebrow="Service Overview"
-              title="What this service covers"
-              text={service.description}
-            />
+           <SectionHeading
+  eyebrow="Service Overview"
+  title="What this service covers"
+  text={service.description}
+/>
+
+{service.slug === "heat-pumps-ductwork" && (
+  <div className="mt-10">
+    <h2 className="text-2xl font-bold text-[#1D1A17] sm:text-3xl">
+      Heat Pump Repair Services
+    </h2>
+
+    <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+      Advance Thermo Care provides professional heat pump repair and
+      maintenance in Pingree Grove, IL and surrounding areas. Our technicians
+      diagnose heating and cooling problems, airflow issues, ice buildup,
+      reversing valve problems, defrost system issues, and auxiliary heat
+      concerns to help restore reliable system performance.
+    </p>
+  </div>
+)}
 
             <div className="mt-12 grid gap-8 sm:grid-cols-2">
               <Reveal>
