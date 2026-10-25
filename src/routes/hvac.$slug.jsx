@@ -12,7 +12,10 @@ export const Route = createFileRoute("/hvac/$slug")({
     if (!service) {
       return { meta: [{ title: "Service not found" }, { name: "robots", content: "noindex" }] };
     }
-    const title = `${service.title} | Pingree Grove, IL`;
+    const title =
+  params.slug === "air-conditioners"
+    ? "AC Repair in Pingree Grove, IL | Advance Thermo Care"
+    : `${service.title} | Pingree Grove, IL`;
     const path = `/hvac/${params.slug}`;
     return {
       ...pageHead({ title, description: service.short, path, type: "article" }),
