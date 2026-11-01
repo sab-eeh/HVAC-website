@@ -29,12 +29,15 @@ description:
   },
   {
     slug: "high-end-appliances",
-    title: "High-End Appliance Repair",
-    heading: "High-End Appliance Repair & Service",
-    short:
-         "Professional Sub-Zero, Viking, Thermador, Wolf and KitchenAid appliance repair in Pingree Grove, IL and surrounding areas.",
-    description:
-         "We provide high-end appliance repair for built-in refrigerators, professional ranges, ovens, microwaves, washers and dryers throughout Pingree Grove, IL and nearby communities. Our technicians service premium brands including Sub-Zero, Viking, Thermador, Wolf and KitchenAid with accurate diagnostics and reliable repairs.",
+   title: "Home Appliance Repair",
+
+heading: "Home Appliance Repair in Pingree Grove, IL",
+
+short:
+  "Need home appliance repair in Pingree Grove or Hampshire, IL? Advance Thermo Care repairs refrigerators, washers, dryers, ovens, dishwashers and microwaves.",
+
+description:
+  "Advance Thermo Care provides residential home appliance repair in Pingree Grove, Hampshire and nearby Illinois communities. We service refrigerators, washing machines, dryers, ovens, dishwashers and microwaves, as well as select premium appliances from Sub-Zero, Viking, Thermador, Wolf and KitchenAid. Our technicians diagnose appliance problems, explain the recommended repair and help restore reliable operation. Contact Advance Thermo Care to request an appliance service appointment.",
     image: appliancesImg,
   },
 ];
