@@ -136,9 +136,9 @@ export const services = [
     category: "hvac",
     categoryTitle: "HVAC",
     title: "Heat Pump Repair & Ductwork Services",
-  short: "Need heat pump repair in Pingree Grove, IL? Advance Thermo Care provides professional heat pump repair, maintenance, and ductwork services for reliable heating and cooling.",
+ short: "Need heat pump repair in Pingree Grove or Hampshire, IL? Advance Thermo Care provides local heat pump repair and maintenance. Request service today.",
 description:
-  "Advance Thermo Care provides professional heat pump repair, maintenance and ductwork services in Pingree Grove, IL and surrounding areas. We diagnose and repair common heat pump problems including heating and cooling issues, ice buildup, airflow problems, reversing valve failures and auxiliary heat operation. We also design, seal and repair ductwork to improve system performance and comfort.",
+  "Advance Thermo Care provides professional heat pump repair and maintenance in Pingree Grove, Hampshire and nearby Illinois communities. If your heat pump is not heating or cooling properly, runs constantly, switches to auxiliary heat, builds ice on the outdoor unit, makes unusual noises or struggles to maintain a comfortable temperature, our technicians can inspect the system and identify the problem. We also check airflow, thermostat settings, electrical components and ductwork where needed. Contact Advance Thermo Care to discuss your heat pump problem and request a service appointment.",
     image: processImg,
     commonProblems: [
       "Heat pump not switching between heating and cooling",

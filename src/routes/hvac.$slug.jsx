@@ -15,7 +15,9 @@ export const Route = createFileRoute("/hvac/$slug")({
     const title =
   params.slug === "air-conditioners"
     ? "AC Repair in Pingree Grove, IL | Advance Thermo Care"
-    : `${service.title} | Pingree Grove, IL`;
+    : params.slug === "heat-pumps-ductwork"
+      ? "Heat Pump Repair in Hampshire, IL | Advance Thermo Care"
+      : `${service.title} | Pingree Grove, IL`;
     const path = `/hvac/${params.slug}`;
     return {
       ...pageHead({ title, description: service.short, path, type: "article" }),
