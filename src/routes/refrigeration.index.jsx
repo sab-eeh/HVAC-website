@@ -4,7 +4,7 @@ import { getCategory } from "../data/services";
 import { pageHead } from "../lib/seo";
 
 const cat = getCategory("refrigeration");
-const title = `${cat.title} | Pingree Grove, IL`;
+const title = "Refrigeration Repair in Pingree Grove, IL | Advance Thermo Care";
 const description = cat.short;
 
 export const Route = createFileRoute("/refrigeration/")({

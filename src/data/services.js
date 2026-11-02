@@ -22,9 +22,9 @@ export const categories = [
     title: "Refrigeration Repair & Service",
 heading: "Commercial & Residential Refrigeration Repair",
 short:
-  "Professional refrigeration repair for walk-in coolers, refrigerators, condensers and evaporators in Pingree Grove, IL and surrounding areas.",
+  "Need commercial refrigeration repair in Pingree Grove, IL? Advance Thermo Care repairs walk-in coolers, commercial freezers, refrigerators, condensers and evaporators.",
 description:
-  "We provide commercial and residential refrigeration repair throughout Pingree Grove, IL and nearby communities. Our team services walk-in coolers, free-standing refrigerators, wine coolers, condensers, evaporators and other refrigeration systems with accurate diagnostics, reliable repairs and professional service.",
+  "Advance Thermo Care provides commercial and residential refrigeration repair in Pingree Grove, Hampshire and nearby Illinois communities. Our services include walk-in cooler repair, commercial freezer repair, commercial refrigerator repair, wine cooler service, and condenser and evaporator diagnostics. If refrigeration equipment is not holding temperature, runs constantly, leaks, makes unusual noises or develops ice buildup, our technicians can inspect the system, identify the cause and recommend the appropriate repair. Contact Advance Thermo Care to request service.",
     image: refrigerationImg,
   },
   {
