@@ -2,10 +2,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { pageHead } from "../lib/seo";
 
 const title =
-  "HVAC & Appliance Repair Service Areas | Advance Thermo Care";
+  "HVAC Service Areas in Pingree Grove, IL | Advance Thermo Care";
 
 const description =
-  "Advance Thermo Care provides HVAC repair, furnace and AC service, refrigeration repair and high-end appliance repair throughout Pingree Grove and surrounding Illinois communities.";
+  "Find HVAC, heating, cooling, refrigeration and appliance repair in Pingree Grove, Hampshire, Elgin and nearby Illinois communities. Call to confirm availability.";
 
 const cities = [
   "Pingree Grove, IL",
@@ -147,8 +147,7 @@ function ServiceAreasPage() {
             </h2>
 
             <p className="mt-5 leading-relaxed text-black/65">
-              Our primary service area includes Pingree Grove and communities
-              throughout Chicago's northwest and western suburbs.
+              Our primary service area includes Pingree Grove, Hampshire, Gilberts, Huntley and Elgin, along with nearby Illinois communities such as Dundee, Carpentersville, Algonquin, Barrington and Geneva. Contact Advance Thermo Care to confirm service availability for your location.
             </p>
           </div>
 
