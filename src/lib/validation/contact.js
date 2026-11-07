@@ -31,6 +31,10 @@ export const contactRequestSchema = z
       .trim()
       .email("Please enter a valid email address.")
       .max(254, "Email is too long."),
+      zipCode: z
+  .string()
+  .trim()
+  .regex(/^\d{5}(-\d{4})?$/, "Please enter a valid ZIP code."),
     service: z
       .string()
       .trim()

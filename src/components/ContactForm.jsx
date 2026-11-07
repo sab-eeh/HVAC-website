@@ -9,6 +9,7 @@ const empty = {
   name: "",
   phone: "",
   email: "",
+  zipCode: "",
   service: "",
   date: "",
   time: "",
@@ -144,6 +145,26 @@ export function ContactForm() {
           />
           <FieldError id="email-error" message={errorFor("email")} />
         </div>
+        <div className="sm:col-span-2">
+  <label className={labelCls} htmlFor="zipCode">
+    ZIP Code
+  </label>
+  <input
+    id="zipCode"
+    type="text"
+    inputMode="numeric"
+    autoComplete="postal-code"
+    required
+    value={values.zipCode}
+    onChange={set("zipCode")}
+    className={`mt-2 ${field}`}
+    placeholder="e.g. 60140"
+    maxLength={10}
+    aria-invalid={Boolean(errorFor("zipCode"))}
+    aria-describedby={errorFor("zipCode") ? "zipCode-error" : undefined}
+  />
+  <FieldError id="zipCode-error" message={errorFor("zipCode")} />
+</div>
         <div className="sm:col-span-2">
           <label className={labelCls} htmlFor="service">
             Service

@@ -81,6 +81,7 @@ function normalizeContactRequest(data) {
     name: data.name,
     phone: data.phone.replace(/\s+/g, " "),
     email: data.email.toLowerCase(),
+    zip_code: data.zipCode,
     service: data.service,
     requested_date: data.date ?? null,
     requested_time: data.time ?? null,

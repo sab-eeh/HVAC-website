@@ -92,6 +92,7 @@ function getRequestDetails(request) {
     name: request.name,
     phone: request.phone,
     email: request.email,
+    zipCode: request.zip_code,
     service: request.service,
     date: request.requested_date,
     time: request.requested_time,
@@ -108,6 +109,7 @@ function ownerHtml(details) {
       row("Name", details.name),
       row("Phone", details.phone),
       row("Email", details.email),
+      row("ZIP Code", details.zipCode),
     ])}
     ${section("Service Information", [
       row("Requested Service", details.service),
