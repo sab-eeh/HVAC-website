@@ -11,7 +11,7 @@ export function Contact() {
       <PageHero
         eyebrow="Contact Us"
         title="Schedule service or ask a technician"
-        text="Tell us what's happening with your system and we'll get you on the schedule — usually same or next day."
+        text="Tell us what's happening with your system and request same-day HVAC repair service. Our team will confirm appointment availability when you contact us."
         crumbs={[{ label: "Home", to: "/" }, { label: "Contact" }]}
       />
 

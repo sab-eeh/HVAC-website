@@ -19,6 +19,7 @@ export function ServiceCategoryPage({ categorySlug }) {
         text={category.short}
         image={category.image}
         imageAlt={`${category.title} service`}
+        showActions={categorySlug === "hvac"}
         crumbs={[{ label: "Home", to: "/" }, { label: category.title }]}
       />
 

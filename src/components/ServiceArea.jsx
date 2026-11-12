@@ -50,30 +50,20 @@ export function ServiceArea() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.1}>
-          <div className="relative overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
-            {/* Map placeholder — swap for an embedded map later */}
-            <div
-              className="h-[20rem] w-full lg:h-[26rem]"
-              style={{
-                backgroundImage:
-                  "linear-gradient(oklch(0.895 0.008 85) 1px, transparent 1px), linear-gradient(90deg, oklch(0.895 0.008 85) 1px, transparent 1px)",
-                backgroundSize: "44px 44px",
-              }}
-              role="img"
-              aria-label={`Map placeholder for ${siteConfig.serviceArea}`}
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="flex items-center gap-3 rounded-full border border-border bg-card px-5 py-3 shadow-lift">
-                <span className="relative flex h-3 w-3">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary/60" />
-                  <span className="relative inline-flex h-3 w-3 rounded-full bg-primary" />
-                </span>
-                <span className="text-sm font-bold">Pingree Grove, IL</span>
-              </div>
-            </div>
-          </div>
-        </Reveal>
+
+<Reveal delay={0.1}>
+  <div className="relative overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
+    <iframe
+      title="Advance Thermo Care Location - Pingree Grove, Illinois"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.31368877749!2d-88.44145092544585!3d42.10075215144696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f1707167d467d%3A0x1a62b8fb942f82d2!2s1331%20Sedona%20Dr%2C%20Pingree%20Grove%2C%20IL%2060140%2C%20USA!5e0!3m2!1sen!2s!4v1794518950428!5m2!1sen!2s"
+      className="h-[20rem] w-full border-0 lg:h-[26rem]"
+      loading="lazy"
+      referrerPolicy="strict-origin-when-cross-origin"
+      allowFullScreen
+    />
+  </div>
+</Reveal>
+
       </div>
     </section>
   );

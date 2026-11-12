@@ -11,10 +11,12 @@ export const categories = [
   {
     slug: "hvac",
     title: "HVAC",
-    heading: "Heating & Cooling Systems",
-    short: "Furnaces, air conditioners, heat pumps, ductwork and smart controls.",
-    description:
-      "Complete residential and light-commercial heating and cooling — diagnostics, repair, maintenance and full system replacement. We size, install and commission equipment properly so it runs efficiently for its full service life.",
+    
+heading: "HVAC Repair in Hampshire & Pingree Grove, IL",
+short: "AC repair, furnace repair, heat pump service, ductwork and thermostat solutions.",
+description:
+  "Need heating or cooling repair? Advance Thermo Care provides residential HVAC repair, maintenance and ductwork services in Hampshire, Pingree Grove and nearby Illinois communities. Contact us by phone or request service online. Ask about same-day appointments; availability is confirmed when you contact us.",
+
     image: hvacImg,
   },
   {

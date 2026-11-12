@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 
-export function PageHero({ eyebrow, title, text, image, imageAlt, crumbs = [] }) {
+export function PageHero({ eyebrow, title, text, image, imageAlt, crumbs = [], showActions = false }) {
   return (
     <section className="border-b border-border bg-surface">
       <div className="container-x grid items-center gap-10 py-14 lg:grid-cols-[1.1fr_1fr] lg:gap-16 lg:py-20">
@@ -39,6 +39,23 @@ export function PageHero({ eyebrow, title, text, image, imageAlt, crumbs = [] })
               {text}
             </p>
           ) : null}
+                    {showActions && (
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href="tel:+17089819065"
+                className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+              >
+                Call Now
+              </a>
+
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center rounded-md border border-border bg-surface px-6 py-3 text-sm font-semibold text-foreground transition hover:border-primary hover:text-primary"
+              >
+                Schedule Service
+              </Link>
+            </div>
+          )}
         </motion.div>
 
         {image ? (

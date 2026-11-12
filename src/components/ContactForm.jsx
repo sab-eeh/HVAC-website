@@ -258,8 +258,14 @@ export function ContactForm() {
         )}
       </Button>
       <p className="mt-3 text-center text-xs text-muted-foreground">
-        We respond to all requests within one business day.
+       Our team will contact you during business hours to confirm service availability.
       </p>
+      <a
+  href="/privacy-policy"
+  className="mt-2 block text-center text-xs text-primary underline underline-offset-4"
+>
+  Privacy Policy
+</a>
     </form>
   );
 }

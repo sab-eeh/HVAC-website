@@ -51,6 +51,7 @@ export function Footer() {
           <FooterLink to="/contact" hash="service-area">
             Service Area
           </FooterLink>
+          <FooterLink to="/privacy-policy">Privacy Policy</FooterLink>
         </FooterCol>
 
         {serviceNav.map((group) => (
