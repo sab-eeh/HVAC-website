@@ -164,6 +164,32 @@ function ServiceAreasPage() {
         </div>
       </section>
 
+{/* Google Map */}
+<section className="container-x pb-16 sm:pb-20">
+  <div className="mb-6 max-w-3xl">
+    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+      Find Us
+    </p>
+    <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+      Visit Advance Thermo Care
+    </h2>
+    <p className="mt-3 leading-relaxed text-black/65">
+      1331 Sedona Dr, Pingree Grove, IL 60140, USA
+    </p>
+  </div>
+
+  <div className="overflow-hidden rounded-2xl border border-black/10 bg-white shadow-sm">
+    <iframe
+      title="Advance Thermo Care Google Maps Location"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.31368877749!2d-88.44145092544585!3d42.10075215144696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f1707167d467d%3A0x1a62b8fb942f82d2!2s1331%20Sedona%20Dr%2C%20Pingree%20Grove%2C%20IL%2060140%2C%20USA!5e0!3m2!1sen!2s!4v1794518950428!5m2!1sen!2s"
+      className="h-[320px] w-full border-0 sm:h-[420px]"
+      loading="lazy"
+      referrerPolicy="strict-origin-when-cross-origin"
+      allowFullScreen
+    />
+  </div>
+</section>
+
       {/* Location */}
       <section className="container-x py-16 sm:py-20">
         <div className="rounded-3xl bg-[#17130f] px-6 py-10 text-white sm:px-10 lg:px-14">
