@@ -51,6 +51,11 @@ export function ContactForm() {
         setFieldErrors(res?.fieldErrors ?? {});
         throw new Error("Contact request failed");
       }
+      if (typeof window.gtag === "function") {
+  window.gtag("event", "conversion", {
+    send_to: "AW-18558825958/nWQGCOHUhbgdEObrxJFF",
+  });
+}
       setStatus("success");
       setValues(empty);
     } catch {
